@@ -1,0 +1,393 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8; /* Match the amenity section background color */
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://optim.tildacdn.com/tild3064-3065-4766-b839-313038366361/-/format/webp/_.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem; /* Keep the space for visual separation */
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.home-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease-out;
+}
+
+.home-description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease-out 0.3s;
+  animation-fill-mode: both;
+}
+
+.book-now-link {
+  text-decoration: none;
+}
+
+.book-now-button {
+  background-color: #FF6B6B;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 1s ease-out 0.6s;
+  animation-fill-mode: both;
+}
+
+.book-now-button:hover {
+  background-color: #FF8E8E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-arrow {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.book-now-button:hover .button-arrow {
+  transform: translateX(5px);
+}
+
+.amenity-section {
+  display: flex;
+  align-items: stretch;
+  min-height: 400px;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.amenity-section:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.amenity-section.reversed {
+  flex-direction: row-reverse;
+}
+
+.amenity-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.amenity-section:hover .amenity-image {
+  transform: scale(1.05);
+}
+
+.amenity-content {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease;
+}
+
+.amenity-section:hover .amenity-content {
+  background-color: #fff;
+}
+
+.amenity-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.amenity-content p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin-bottom: 2rem; /* Adjust space for mobile */
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .book-now-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .amenity-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .amenity-section.reversed {
+    flex-direction: column;
+  }
+
+  .amenity-image {
+    height: 250px;
+    width: 100%;
+  }
+
+  .amenity-content {
+    padding: 2rem;
+  }
+
+  .amenity-content h2 {
+    font-size: 2rem;
+  }
+
+  .amenity-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Existing styles for hero section and amenities ... */
+
+/* Blog Section */
+.blog-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.blog-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.blog-previews {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.blog-preview {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-preview h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.blog-preview p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.read-more, .view-all-link {
+  color: #FF6B6B;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover, .view-all-link:hover {
+  color: #FF8E8E;
+}
+
+.view-all-link {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Reviews Section */
+.reviews-section {
+  padding: 4rem 2rem;
+  background-color: #f8f8f8;
+}
+
+.reviews-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.review {
+  flex: 1;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.review h4 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.rating {
+  font-weight: 600;
+  color: #FF6B6B;
+}
+
+.review p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 4rem 2rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #FF6B6B;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FF6B6B;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .blog-previews, .reviews-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-bottom: 2rem;
+  }
+}

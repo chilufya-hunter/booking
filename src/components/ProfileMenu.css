@@ -1,0 +1,166 @@
+/* ProfileMenu.css */
+
+/* Container styling */
+.profile-menu-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the profile content */
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Title styling */
+  .profile-menu-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Profile card styling */
+  .profile-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card .flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .profile-card .w-20 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-card .w-20 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .profile-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* File upload styling */
+  input[type="file"] {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Referral section */
+  .referral-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .referral-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .referral-card p {
+    margin-bottom: 10px;
+  }
+  
+  .referral-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .referral-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Booking history section */
+  .booking-history-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .booking-history-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .booking-history-card .border-b {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+  }
+  
+  .booking-history-card .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .booking-history-card .status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .booking-history-card .bg-green-200 {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .booking-history-card .bg-yellow-200 {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .profile-menu-container {
+      padding: 10px;
+    }
+  
+    .profile-card .flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .booking-history-card .flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .booking-history-card .status {
+      margin-top: 8px;
+    }
+  }
+  
